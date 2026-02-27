@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ui-font-family: 'Manrope', 'Trebuchet MS', 'Segoe UI', sans-serif;
+
+  --ui-color-canvas: #f4f5f4;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #f7f9f8;
+  --ui-color-surface-strong: #eef2f0;
+  --ui-color-border: #d4dbd8;
+  --ui-color-border-strong: #a4b1ac;
+
+  --ui-color-text: #162320;
+  --ui-color-text-muted: #52625e;
+  --ui-color-text-subtle: #6c7e79;
+
+  --ui-color-primary: #0a6e55;
+  --ui-color-primary-hover: #075a45;
+  --ui-color-on-primary: #f6fffb;
+
+  --ui-color-danger: #be3f47;
+  --ui-color-warning: #9a6a11;
+  --ui-color-success: #2f7649;
+  --ui-color-info: #1b5d95;
+
+  --ui-radius-2xs: 4px;
+  --ui-radius-xs: 6px;
+  --ui-radius-sm: 8px;
+  --ui-radius-md: 10px;
+  --ui-radius-lg: 14px;
+
+  --ui-space-1: 4px;
+  --ui-space-2: 8px;
+  --ui-space-3: 12px;
+  --ui-space-4: 16px;
+  --ui-space-5: 20px;
+  --ui-space-6: 24px;
+  --ui-space-8: 32px;
+
+  --ui-shadow-sm: 0 1px 3px rgb(8 19 16 / 0.08);
+  --ui-shadow-md: 0 8px 20px rgb(11 24 20 / 0.08);
+
+  --ui-motion-duration-fast: 120ms;
+  --ui-motion-duration-base: 180ms;
+  --ui-motion-duration-slow: 280ms;
+  --ui-motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ui-motion-ease-emphasized: cubic-bezier(0.2, 0.7, 0, 1);
+}
