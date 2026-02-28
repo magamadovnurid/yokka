@@ -2,24 +2,28 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 const inventory = [
   {
-    domain: 'Core',
+    domain: 'Core Foundation',
     elements: ['Color tokens', 'Spacing/radius/shadows', 'Icons', 'Buttons', 'Inputs', 'Select', 'Textarea', 'Checkbox', 'Radio', 'Switch', 'Tag', 'Badge', 'Avatar', 'Card', 'Divider'],
   },
   {
-    domain: 'Navigation',
-    elements: ['Breadcrumbs', 'Tabs', 'Pagination', 'State tabs'],
+    domain: 'Core Extensions',
+    elements: ['Indicators', 'Mini progress', 'Surface toolbar', 'Surface blocks'],
   },
   {
-    domain: 'Feedback',
-    elements: ['Alert', 'Empty state', 'Skeleton', 'Toast'],
-  },
-  {
-    domain: 'Marketplace',
+    domain: 'Marketplace Base',
     elements: ['Search panel', 'Filter bar', 'Listing card', 'Seller trust'],
   },
   {
-    domain: 'Cabinet',
+    domain: 'Marketplace Desktop',
+    elements: ['Desktop header', 'Category strip', 'Widget highlights', 'Compact listing rows'],
+  },
+  {
+    domain: 'Cabinet Base',
     elements: ['Sidebar nav', 'Inbox list', 'Chat thread', 'Notifications', 'Listing states'],
+  },
+  {
+    domain: 'Cabinet Desktop',
+    elements: ['Balance card', 'KPI widgets', 'Quick actions', 'Profile completion', 'Trust checklist'],
   },
 ]
 
@@ -37,10 +41,9 @@ type Story = StoryObj<typeof meta>
 export const CoverageMatrix: Story = {
   render: () => (
     <div className="ds-stack" style={{ minWidth: 900 }}>
-      <h3 style={{ margin: 0 }}>Inventory Coverage (v1 expanded)</h3>
+      <h3 style={{ margin: 0 }}>Inventory Coverage (Avito Desktop Expanded)</h3>
       <p style={{ color: 'var(--ui-color-text-muted)', margin: 0 }}>
-        Матрица компонентов для приближения по полноте к marketplace-паттернам уровня Avito. Включены базовые UI-объекты,
-        кабинетные сценарии и ключевые объекты выдачи/сделки.
+        Расширенная Avito-карта компонентов: базовые элементы + desktop-микроэлементы для хедера, виджетов, статусных блоков и кабинета.
       </p>
       <div className="ds-card" style={{ padding: 0 }}>
         <table style={{ borderCollapse: 'collapse', width: '100%' }}>
