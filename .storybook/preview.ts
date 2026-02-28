@@ -4,7 +4,9 @@ import '../src/design-system/global.css'
 const paletteAttribute = 'data-theme'
 
 function applyPalette(palette: string | undefined) {
-  const maybeDocument = globalThis as { document?: { documentElement?: { setAttribute: (name: string, value: string) => void } } }
+  const maybeDocument = globalThis as {
+    document?: { documentElement?: { setAttribute: (name: string, value: string) => void } }
+  }
   maybeDocument.document?.documentElement?.setAttribute(paletteAttribute, palette ?? 'avito')
 }
 
@@ -21,6 +23,10 @@ const preview: Preview = {
           { value: 'avito', title: 'Avito Green' },
           { value: 'ocean', title: 'Ocean Blue' },
           { value: 'graphite', title: 'Graphite Mono' },
+          { value: 'sunset', title: 'Sunset Orange' },
+          { value: 'plum', title: 'Plum Violet' },
+          { value: 'sand', title: 'Sand Amber' },
+          { value: 'mint', title: 'Mint Teal' },
         ],
       },
     },
@@ -55,9 +61,9 @@ const preview: Preview = {
     backgrounds: {
       default: 'canvas',
       values: [
-        { name: 'canvas', value: '#f3f5f3' },
-        { name: 'panel', value: '#ffffff' },
-        { name: 'contrast', value: '#112f2b' },
+        { name: 'canvas', value: 'var(--ui-color-canvas)' },
+        { name: 'surface', value: 'var(--ui-color-surface)' },
+        { name: 'soft', value: 'var(--ui-color-surface-soft)' },
       ],
     },
   },

@@ -9,10 +9,18 @@ const palette = [
   { name: 'border-strong', variable: '--ui-color-border-strong' },
   { name: 'text', variable: '--ui-color-text' },
   { name: 'text-muted', variable: '--ui-color-text-muted' },
+  { name: 'text-subtle', variable: '--ui-color-text-subtle' },
   { name: 'primary', variable: '--ui-color-primary' },
+  { name: 'primary-hover', variable: '--ui-color-primary-hover' },
+  { name: 'primary-soft-bg', variable: '--ui-color-primary-soft-bg' },
+  { name: 'active-surface', variable: '--ui-color-active-surface' },
   { name: 'danger', variable: '--ui-color-danger' },
   { name: 'warning', variable: '--ui-color-warning' },
   { name: 'success', variable: '--ui-color-success' },
+  { name: 'info', variable: '--ui-color-info' },
+  { name: 'toast-bg', variable: '--ui-color-toast-bg' },
+  { name: 'listing-grad-start', variable: '--ui-color-listing-grad-start' },
+  { name: 'listing-grad-end', variable: '--ui-color-listing-grad-end' },
 ]
 
 const spacing = ['--ui-space-1', '--ui-space-2', '--ui-space-3', '--ui-space-4', '--ui-space-5', '--ui-space-6', '--ui-space-8']
@@ -36,9 +44,16 @@ export const ColorPalette: Story = {
       <div style={{ display: 'grid', gap: 10, gridTemplateColumns: 'repeat(4, minmax(0, 1fr))' }}>
         {palette.map((color) => (
           <div key={color.variable} className="ds-card" style={{ gap: 8, padding: 10 }}>
-            <div style={{ background: `var(${color.variable})`, border: '1px solid #cfd8d5', borderRadius: 6, height: 54 }} />
+            <div
+              style={{
+                background: `var(${color.variable})`,
+                border: '1px solid var(--ui-color-border)',
+                borderRadius: 'var(--ui-radius-xs)',
+                height: 54,
+              }}
+            />
             <div style={{ fontSize: 12, fontWeight: 800 }}>{color.name}</div>
-            <code style={{ color: '#59706b', fontSize: 11 }}>{color.variable}</code>
+            <code style={{ color: 'var(--ui-color-text-subtle)', fontSize: 11 }}>{color.variable}</code>
           </div>
         ))}
       </div>
@@ -53,14 +68,28 @@ export const SpacingAndRadii: Story = {
       {spacing.map((token) => (
         <div key={token} className="ds-row">
           <code style={{ minWidth: 130 }}>{token}</code>
-          <div style={{ background: '#0a6e55', borderRadius: 4, height: 12, width: `var(${token})` }} />
+          <div
+            style={{
+              background: 'var(--ui-color-primary)',
+              borderRadius: 'var(--ui-radius-2xs)',
+              height: 12,
+              width: `var(${token})`,
+            }}
+          />
         </div>
       ))}
       <h3 style={{ margin: '8px 0 0' }}>Corner Radius</h3>
       <div className="ds-row">
         {radii.map((token) => (
           <div key={token} className="ds-card" style={{ gap: 8, padding: 10, width: 110 }}>
-            <div style={{ background: '#e7efec', border: '1px solid #ced8d4', borderRadius: `var(${token})`, height: 40 }} />
+            <div
+              style={{
+                background: 'var(--ui-color-progress-track)',
+                border: '1px solid var(--ui-color-border)',
+                borderRadius: `var(${token})`,
+                height: 40,
+              }}
+            />
             <code style={{ fontSize: 11 }}>{token}</code>
           </div>
         ))}

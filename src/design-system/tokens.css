@@ -23,6 +23,111 @@
   --ui-color-success: #2f7649;
   --ui-color-info: #1b5d95;
 
+  --ui-color-focus-ring-strong: color-mix(in srgb, var(--ui-color-primary) 32%, transparent);
+  --ui-color-focus-ring: color-mix(in srgb, var(--ui-color-primary) 26%, transparent);
+  --ui-color-focus-ring-muted: color-mix(in srgb, var(--ui-color-primary) 20%, transparent);
+  --ui-color-focus-ring-soft: color-mix(in srgb, var(--ui-color-primary) 16%, transparent);
+
+  --ui-color-danger-soft-bg: color-mix(in srgb, var(--ui-color-danger) 10%, var(--ui-color-surface));
+  --ui-color-danger-soft-border: color-mix(in srgb, var(--ui-color-danger) 25%, var(--ui-color-border));
+  --ui-color-danger-soft-border-strong: color-mix(in srgb, var(--ui-color-danger) 48%, var(--ui-color-border));
+
+  --ui-color-switch-track-off: color-mix(in srgb, var(--ui-color-border-strong) 65%, var(--ui-color-surface));
+  --ui-color-switch-knob: var(--ui-color-surface);
+
+  --ui-color-avatar-bg: color-mix(in srgb, var(--ui-color-primary) 14%, var(--ui-color-surface-strong));
+  --ui-color-avatar-fg: color-mix(in srgb, var(--ui-color-primary) 72%, var(--ui-color-text));
+
+  --ui-color-neutral-soft-bg: color-mix(in srgb, var(--ui-color-border) 26%, var(--ui-color-surface-soft));
+  --ui-color-neutral-soft-fg: color-mix(in srgb, var(--ui-color-text-muted) 80%, var(--ui-color-text));
+
+  --ui-color-success-soft-bg: color-mix(in srgb, var(--ui-color-success) 14%, var(--ui-color-surface));
+  --ui-color-success-soft-fg: color-mix(in srgb, var(--ui-color-success) 82%, var(--ui-color-text));
+
+  --ui-color-warning-soft-bg: color-mix(in srgb, var(--ui-color-warning) 15%, var(--ui-color-surface));
+  --ui-color-warning-soft-fg: color-mix(in srgb, var(--ui-color-warning) 85%, var(--ui-color-text));
+
+  --ui-color-info-soft-bg: color-mix(in srgb, var(--ui-color-info) 14%, var(--ui-color-surface));
+  --ui-color-info-soft-fg: color-mix(in srgb, var(--ui-color-info) 84%, var(--ui-color-text));
+
+  --ui-color-primary-soft-bg: color-mix(in srgb, var(--ui-color-primary) 12%, var(--ui-color-surface));
+  --ui-color-hover-surface: color-mix(in srgb, var(--ui-color-primary) 7%, var(--ui-color-surface-soft));
+  --ui-color-active-surface: color-mix(in srgb, var(--ui-color-primary) 14%, var(--ui-color-surface));
+  --ui-color-active-fg: color-mix(in srgb, var(--ui-color-primary) 84%, var(--ui-color-text));
+  --ui-color-count-bg: color-mix(in srgb, var(--ui-color-primary) 20%, var(--ui-color-surface));
+
+  --ui-color-alert-info-bg: color-mix(in srgb, var(--ui-color-info) 10%, var(--ui-color-surface));
+  --ui-color-alert-info-border: color-mix(in srgb, var(--ui-color-info) 28%, var(--ui-color-border));
+  --ui-color-alert-info-text: var(--ui-color-info);
+
+  --ui-color-alert-success-bg: color-mix(in srgb, var(--ui-color-success) 10%, var(--ui-color-surface));
+  --ui-color-alert-success-border: color-mix(in srgb, var(--ui-color-success) 28%, var(--ui-color-border));
+  --ui-color-alert-success-text: var(--ui-color-success);
+
+  --ui-color-alert-warning-bg: color-mix(in srgb, var(--ui-color-warning) 14%, var(--ui-color-surface));
+  --ui-color-alert-warning-border: color-mix(in srgb, var(--ui-color-warning) 30%, var(--ui-color-border));
+  --ui-color-alert-warning-text: var(--ui-color-warning-soft-fg);
+
+  --ui-color-alert-error-bg: color-mix(in srgb, var(--ui-color-danger) 9%, var(--ui-color-surface));
+  --ui-color-alert-error-border: color-mix(in srgb, var(--ui-color-danger) 28%, var(--ui-color-border));
+  --ui-color-alert-error-text: color-mix(in srgb, var(--ui-color-danger) 88%, var(--ui-color-text));
+
+  --ui-color-skeleton-start: color-mix(in srgb, var(--ui-color-border) 22%, var(--ui-color-surface-soft));
+  --ui-color-skeleton-middle: color-mix(in srgb, var(--ui-color-border) 34%, var(--ui-color-surface-soft));
+
+  --ui-color-toast-bg: color-mix(in srgb, var(--ui-color-text) 88%, var(--ui-color-primary) 12%);
+  --ui-color-toast-text: color-mix(in srgb, var(--ui-color-on-primary) 88%, white 12%);
+  --ui-color-toast-muted: color-mix(in srgb, var(--ui-color-on-primary) 72%, var(--ui-color-primary) 28%);
+
+  --ui-color-listing-grad-start: color-mix(in srgb, var(--ui-color-primary) 14%, var(--ui-color-surface-strong));
+  --ui-color-listing-grad-end: color-mix(in srgb, var(--ui-color-primary) 6%, var(--ui-color-surface-soft));
+  --ui-color-listing-grad-hover-start: color-mix(in srgb, var(--ui-color-primary) 18%, var(--ui-color-surface-strong));
+  --ui-color-listing-grad-hover-end: color-mix(in srgb, var(--ui-color-primary) 10%, var(--ui-color-surface-soft));
+  --ui-color-favorite-border: color-mix(in srgb, var(--ui-color-primary) 34%, var(--ui-color-border));
+
+  --ui-color-trust-avatar-bg: color-mix(in srgb, var(--ui-color-primary) 18%, var(--ui-color-surface-strong));
+  --ui-color-trust-avatar-fg: color-mix(in srgb, var(--ui-color-primary) 70%, var(--ui-color-text));
+
+  --ui-color-active-surface-alt: var(--ui-color-active-surface);
+  --ui-color-active-fg-alt: var(--ui-color-active-fg);
+  --ui-color-active-surface-alt-2: var(--ui-color-active-surface);
+  --ui-color-active-fg-alt-2: var(--ui-color-active-fg);
+  --ui-color-count-bg-alt: var(--ui-color-count-bg);
+  --ui-color-count-fg-alt: var(--ui-color-active-fg);
+
+  --ui-color-list-hover: color-mix(in srgb, var(--ui-color-primary) 6%, var(--ui-color-surface-soft));
+  --ui-color-list-active: color-mix(in srgb, var(--ui-color-primary) 10%, var(--ui-color-surface-soft));
+
+  --ui-color-chat-me-bg: color-mix(in srgb, var(--ui-color-primary) 12%, var(--ui-color-surface-soft));
+  --ui-color-chat-other-bg: color-mix(in srgb, var(--ui-color-border) 20%, var(--ui-color-surface-soft));
+
+  --ui-color-notification-hover: color-mix(in srgb, var(--ui-color-primary) 5%, var(--ui-color-surface-soft));
+  --ui-color-notification-unread-border: color-mix(in srgb, var(--ui-color-primary) 34%, var(--ui-color-border));
+  --ui-color-notification-unread-ring: color-mix(in srgb, var(--ui-color-primary) 18%, transparent);
+
+  --ui-color-status-muted: color-mix(in srgb, var(--ui-color-text-subtle) 70%, var(--ui-color-border-strong));
+  --ui-color-progress-track: color-mix(in srgb, var(--ui-color-border) 35%, var(--ui-color-surface-soft));
+  --ui-color-progress-track-strong: color-mix(in srgb, var(--ui-color-border) 44%, var(--ui-color-surface-soft));
+
+  --ui-color-chip-soft-bg: color-mix(in srgb, var(--ui-color-primary) 6%, var(--ui-color-surface-strong));
+  --ui-color-chip-soft-border: color-mix(in srgb, var(--ui-color-primary) 14%, var(--ui-color-border));
+  --ui-color-chip-bg: color-mix(in srgb, var(--ui-color-primary) 4%, var(--ui-color-surface-soft));
+  --ui-color-chip-border: color-mix(in srgb, var(--ui-color-primary) 12%, var(--ui-color-border));
+  --ui-color-chip-active-bg: color-mix(in srgb, var(--ui-color-primary) 14%, var(--ui-color-surface));
+  --ui-color-chip-active-border: color-mix(in srgb, var(--ui-color-primary) 26%, var(--ui-color-border));
+  --ui-color-chip-active-text: var(--ui-color-active-fg);
+
+  --ui-color-balance-grad-start: color-mix(in srgb, var(--ui-color-primary) 90%, black 10%);
+  --ui-color-balance-grad-end: color-mix(in srgb, var(--ui-color-primary-hover) 88%, black 12%);
+  --ui-color-balance-text: color-mix(in srgb, var(--ui-color-on-primary) 88%, white 12%);
+  --ui-color-balance-label: color-mix(in srgb, var(--ui-color-on-primary) 70%, var(--ui-color-primary) 30%);
+  --ui-color-balance-meta: color-mix(in srgb, var(--ui-color-on-primary) 76%, var(--ui-color-primary) 24%);
+
+  --ui-color-success-strong: color-mix(in srgb, var(--ui-color-success) 86%, var(--ui-color-text) 14%);
+
+  --ui-color-bg-glow-start: color-mix(in srgb, var(--ui-color-primary) 12%, var(--ui-color-canvas));
+  --ui-color-bg-glow-end: color-mix(in srgb, var(--ui-color-warning) 10%, var(--ui-color-canvas));
+
   --ui-radius-2xs: 4px;
   --ui-radius-xs: 6px;
   --ui-radius-sm: 8px;
@@ -111,4 +216,92 @@
   --ui-color-warning: #88621a;
   --ui-color-success: #346b52;
   --ui-color-info: #3d5875;
+}
+
+:root[data-theme='sunset'] {
+  --ui-color-canvas: #fbf6f2;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #fff9f4;
+  --ui-color-surface-strong: #f5ece3;
+  --ui-color-border: #e6d6c5;
+  --ui-color-border-strong: #cbb096;
+
+  --ui-color-text: #2f2016;
+  --ui-color-text-muted: #6d5140;
+  --ui-color-text-subtle: #8a6a56;
+
+  --ui-color-primary: #c85f2f;
+  --ui-color-primary-hover: #ab4d23;
+  --ui-color-on-primary: #fffaf6;
+
+  --ui-color-danger: #bf3d43;
+  --ui-color-warning: #9a6a11;
+  --ui-color-success: #3c764c;
+  --ui-color-info: #2f6aa0;
+}
+
+:root[data-theme='plum'] {
+  --ui-color-canvas: #f8f3fa;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #fbf7fc;
+  --ui-color-surface-strong: #f0e7f4;
+  --ui-color-border: #dfd0e6;
+  --ui-color-border-strong: #b99dc6;
+
+  --ui-color-text: #2f1f3a;
+  --ui-color-text-muted: #5f4a6d;
+  --ui-color-text-subtle: #7d648e;
+
+  --ui-color-primary: #7a4597;
+  --ui-color-primary-hover: #63397b;
+  --ui-color-on-primary: #fcf8ff;
+
+  --ui-color-danger: #b43f62;
+  --ui-color-warning: #996b1a;
+  --ui-color-success: #2f7759;
+  --ui-color-info: #3c5fa7;
+}
+
+:root[data-theme='sand'] {
+  --ui-color-canvas: #f8f6f1;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #fbf9f4;
+  --ui-color-surface-strong: #f1ebdf;
+  --ui-color-border: #ddd5c6;
+  --ui-color-border-strong: #b8aa93;
+
+  --ui-color-text: #2e291f;
+  --ui-color-text-muted: #5f5648;
+  --ui-color-text-subtle: #7b715f;
+
+  --ui-color-primary: #8b6a2b;
+  --ui-color-primary-hover: #735522;
+  --ui-color-on-primary: #fffaf0;
+
+  --ui-color-danger: #b84a49;
+  --ui-color-warning: #946b17;
+  --ui-color-success: #3c7148;
+  --ui-color-info: #3f638f;
+}
+
+:root[data-theme='mint'] {
+  --ui-color-canvas: #f1f8f6;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #f4fbf9;
+  --ui-color-surface-strong: #e3f1ec;
+  --ui-color-border: #c9dfd7;
+  --ui-color-border-strong: #99b8ae;
+
+  --ui-color-text: #17302a;
+  --ui-color-text-muted: #48635c;
+  --ui-color-text-subtle: #637f77;
+
+  --ui-color-primary: #0f7d66;
+  --ui-color-primary-hover: #0b6754;
+  --ui-color-on-primary: #f4fffc;
+
+  --ui-color-danger: #b9434a;
+  --ui-color-warning: #926515;
+  --ui-color-success: #2e7754;
+  --ui-color-info: #1f618f;
 }
