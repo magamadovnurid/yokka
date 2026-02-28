@@ -1,0 +1,68 @@
+{
+  "screen": "market.search.results",
+  "screen_version": "v1",
+  "role": "buyer",
+  "widgets": [
+    {
+      "widget_type": "market.search_panel",
+      "schema_version": "v1",
+      "slot": "market.search.header",
+      "state": "default",
+      "data": {
+        "query": "iPhone 15",
+        "city": "Москва"
+      },
+      "actions": [
+        {
+          "id": "search.submit",
+          "type": "submit",
+          "label": "Найти"
+        }
+      ]
+    },
+    {
+      "widget_type": "market.filter_bar",
+      "schema_version": "v1",
+      "slot": "market.search.filters",
+      "state": "default",
+      "data": {
+        "filters": [
+          "Состояние",
+          "Доставка",
+          "Цена"
+        ],
+        "sort": "price_asc"
+      },
+      "actions": [
+        {
+          "id": "filters.open",
+          "type": "dialog",
+          "label": "Открыть фильтры"
+        }
+      ]
+    },
+    {
+      "widget_type": "market.listing_card",
+      "schema_version": "v1",
+      "slot": "market.results.grid",
+      "state": "default",
+      "data": {
+        "id": "123",
+        "title": "iPhone 15 Pro 256GB",
+        "price": "89 000 ₽",
+        "meta": "Москва · сегодня"
+      },
+      "actions": [
+        {
+          "id": "listing.open",
+          "type": "navigate",
+          "target": "/item/123"
+        },
+        {
+          "id": "favorite.toggle",
+          "type": "command"
+        }
+      ]
+    }
+  ]
+}

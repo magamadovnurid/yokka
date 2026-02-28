@@ -1,0 +1,239 @@
+{
+  "catalog_version": "1.0.0",
+  "updated_at": "2026-03-01",
+  "slots": [
+    {
+      "slot": "cabinet.dashboard.main",
+      "widget_types": [
+        "cabinet.dashboard_widgets"
+      ]
+    },
+    {
+      "slot": "cabinet.listings.header",
+      "widget_types": [
+        "cabinet.listing_state_tabs"
+      ]
+    },
+    {
+      "slot": "cabinet.messaging.main",
+      "widget_types": [
+        "cabinet.chat_thread"
+      ]
+    },
+    {
+      "slot": "cabinet.messaging.sidebar",
+      "widget_types": [
+        "cabinet.inbox_list"
+      ]
+    },
+    {
+      "slot": "cabinet.notifications.main",
+      "widget_types": [
+        "cabinet.notifications"
+      ]
+    },
+    {
+      "slot": "cabinet.profile.main",
+      "widget_types": [
+        "cabinet.profile_blocks"
+      ]
+    },
+    {
+      "slot": "cabinet.sidebar",
+      "widget_types": [
+        "cabinet.sidebar_nav"
+      ]
+    },
+    {
+      "slot": "drawer.body",
+      "widget_types": [
+        "core.control.price_range",
+        "core.form.select"
+      ]
+    },
+    {
+      "slot": "filters.overlay",
+      "widget_types": [
+        "core.overlay.drawer"
+      ]
+    },
+    {
+      "slot": "filters.panel",
+      "widget_types": [
+        "core.control.price_range",
+        "core.control.range_slider",
+        "core.form.checkbox",
+        "core.form.input",
+        "core.form.radio_group",
+        "core.form.select",
+        "core.form.switch"
+      ]
+    },
+    {
+      "slot": "form.main",
+      "widget_types": [
+        "core.control.range_slider",
+        "core.feedback.alert",
+        "core.form.checkbox",
+        "core.form.input",
+        "core.form.radio_group",
+        "core.form.select",
+        "core.form.textarea",
+        "core.menu.popover",
+        "core.overlay.rich_tooltip",
+        "core.overlay.tooltip"
+      ]
+    },
+    {
+      "slot": "list.body",
+      "widget_types": [
+        "core.feedback.empty_state",
+        "core.feedback.skeleton"
+      ]
+    },
+    {
+      "slot": "list.footer",
+      "widget_types": [
+        "core.navigation.pagination"
+      ]
+    },
+    {
+      "slot": "list.toolbar",
+      "widget_types": [
+        "core.navigation.tabs"
+      ]
+    },
+    {
+      "slot": "listing.card",
+      "widget_types": [
+        "core.menu.action",
+        "core.menu.context",
+        "core.menu.dropdown",
+        "core.overlay.tooltip"
+      ]
+    },
+    {
+      "slot": "listing.footer",
+      "widget_types": [
+        "market.seller_trust"
+      ]
+    },
+    {
+      "slot": "listing.header",
+      "widget_types": [
+        "market.media_gallery"
+      ]
+    },
+    {
+      "slot": "listing.media",
+      "widget_types": [
+        "market.media_gallery"
+      ]
+    },
+    {
+      "slot": "listing.sidebar",
+      "widget_types": [
+        "market.seller_trust"
+      ]
+    },
+    {
+      "slot": "market.results.after_list",
+      "widget_types": [
+        "market.desktop_widgets"
+      ]
+    },
+    {
+      "slot": "market.results.grid",
+      "widget_types": [
+        "market.listing_card"
+      ]
+    },
+    {
+      "slot": "market.results.header",
+      "widget_types": [
+        "market.category_strip"
+      ]
+    },
+    {
+      "slot": "market.results.list",
+      "widget_types": [
+        "market.listing_card"
+      ]
+    },
+    {
+      "slot": "market.results.sidebar",
+      "widget_types": [
+        "market.desktop_widgets"
+      ]
+    },
+    {
+      "slot": "market.search.filters",
+      "widget_types": [
+        "market.filter_bar"
+      ]
+    },
+    {
+      "slot": "market.search.header",
+      "widget_types": [
+        "market.category_strip",
+        "market.search_panel"
+      ]
+    },
+    {
+      "slot": "modal.body",
+      "widget_types": [
+        "core.feedback.alert",
+        "core.form.input",
+        "core.form.textarea"
+      ]
+    },
+    {
+      "slot": "screen.content",
+      "widget_types": [
+        "core.feedback.empty_state",
+        "core.feedback.skeleton",
+        "core.menu.context"
+      ]
+    },
+    {
+      "slot": "screen.header",
+      "widget_types": [
+        "core.feedback.alert",
+        "core.menu.dropdown",
+        "core.menu.popover",
+        "core.navigation.breadcrumbs",
+        "core.navigation.tabs",
+        "core.overlay.rich_tooltip",
+        "core.overlay.tooltip",
+        "market.desktop_header"
+      ]
+    },
+    {
+      "slot": "screen.overlay",
+      "widget_types": [
+        "core.feedback.toast",
+        "core.overlay.drawer",
+        "core.overlay.modal"
+      ]
+    },
+    {
+      "slot": "search.header",
+      "widget_types": [
+        "core.form.input"
+      ]
+    },
+    {
+      "slot": "settings.row",
+      "widget_types": [
+        "core.form.switch"
+      ]
+    },
+    {
+      "slot": "toolbar.actions",
+      "widget_types": [
+        "core.menu.action",
+        "core.menu.dropdown"
+      ]
+    }
+  ]
+}

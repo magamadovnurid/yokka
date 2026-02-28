@@ -17,7 +17,10 @@
     "avito:audit": "node scripts/avito/run-audit.mjs",
     "avito:audit:seller": "AVITO_ROLE=seller AVITO_AUTH_STATE=.auth/avito-seller.json AVITO_OUTPUT_DIR=reports/avito-audit/seller node scripts/avito/run-audit.mjs",
     "avito:audit:buyer": "AVITO_ROLE=buyer AVITO_AUTH_STATE=.auth/avito-buyer.json AVITO_OUTPUT_DIR=reports/avito-audit/buyer node scripts/avito/run-audit.mjs",
-    "avito:audit:roles": "node scripts/avito/run-role-audits.mjs"
+    "avito:audit:roles": "node scripts/avito/run-role-audits.mjs",
+    "contracts:build": "node scripts/ui/build-contracts.mjs --write",
+    "contracts:check": "node scripts/ui/build-contracts.mjs --check",
+    "contracts:validate-payload": "node scripts/ui/validate-view-payload.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

@@ -1,0 +1,52 @@
+{
+  "screen": "cabinet.dashboard.home",
+  "screen_version": "v1",
+  "role": "seller",
+  "widgets": [
+    {
+      "widget_type": "cabinet.sidebar_nav",
+      "schema_version": "v1",
+      "slot": "cabinet.sidebar",
+      "state": "default",
+      "data": {
+        "sections": [
+          "Объявления",
+          "Сообщения",
+          "Статистика"
+        ],
+        "active_id": "items"
+      },
+      "actions": [
+        {
+          "id": "nav.open",
+          "type": "navigate"
+        }
+      ]
+    },
+    {
+      "widget_type": "cabinet.dashboard_widgets",
+      "schema_version": "v1",
+      "slot": "cabinet.dashboard.main",
+      "state": "default",
+      "data": {
+        "kpis": [
+          {
+            "id": "views",
+            "value": 1204
+          },
+          {
+            "id": "contacts",
+            "value": 93
+          }
+        ]
+      },
+      "actions": [
+        {
+          "id": "dashboard.open_analytics",
+          "type": "navigate",
+          "target": "/profile/analytics"
+        }
+      ]
+    }
+  ]
+}

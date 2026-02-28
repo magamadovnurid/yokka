@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yokka/contracts/ui-view.schema.json",
+  "title": "Yokka UI View Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "screen",
+    "screen_version",
+    "widgets"
+  ],
+  "properties": {
+    "screen": {
+      "type": "string",
+      "minLength": 1
+    },
+    "screen_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "guest",
+        "buyer",
+        "seller"
+      ]
+    },
+    "widgets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "widget_type",
+          "schema_version",
+          "slot",
+          "state",
+          "data"
+        ],
+        "properties": {
+          "widget_type": {
+            "type": "string",
+            "enum": [
+              "core.form.input",
+              "core.form.select",
+              "core.form.textarea",
+              "core.form.checkbox",
+              "core.form.radio_group",
+              "core.form.switch",
+              "core.navigation.breadcrumbs",
+              "core.navigation.tabs",
+              "core.navigation.pagination",
+              "core.feedback.alert",
+              "core.feedback.toast",
+              "core.feedback.empty_state",
+              "core.feedback.skeleton",
+              "core.menu.dropdown",
+              "core.menu.context",
+              "core.menu.action",
+              "core.menu.popover",
+              "core.overlay.tooltip",
+              "core.overlay.rich_tooltip",
+              "core.overlay.modal",
+              "core.overlay.drawer",
+              "core.control.range_slider",
+              "core.control.price_range",
+              "market.search_panel",
+              "market.filter_bar",
+              "market.listing_card",
+              "market.seller_trust",
+              "market.desktop_header",
+              "market.category_strip",
+              "market.desktop_widgets",
+              "market.media_gallery",
+              "cabinet.sidebar_nav",
+              "cabinet.listing_state_tabs",
+              "cabinet.inbox_list",
+              "cabinet.chat_thread",
+              "cabinet.notifications",
+              "cabinet.dashboard_widgets",
+              "cabinet.profile_blocks"
+            ]
+          },
+          "schema_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slot": {
+            "type": "string",
+            "enum": [
+              "cabinet.dashboard.main",
+              "cabinet.listings.header",
+              "cabinet.messaging.main",
+              "cabinet.messaging.sidebar",
+              "cabinet.notifications.main",
+              "cabinet.profile.main",
+              "cabinet.sidebar",
+              "drawer.body",
+              "filters.overlay",
+              "filters.panel",
+              "form.main",
+              "list.body",
+              "list.footer",
+              "list.toolbar",
+              "listing.card",
+              "listing.footer",
+              "listing.header",
+              "listing.media",
+              "listing.sidebar",
+              "market.results.after_list",
+              "market.results.grid",
+              "market.results.header",
+              "market.results.list",
+              "market.results.sidebar",
+              "market.search.filters",
+              "market.search.header",
+              "modal.body",
+              "screen.content",
+              "screen.header",
+              "screen.overlay",
+              "search.header",
+              "settings.row",
+              "toolbar.actions"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "default",
+              "disabled",
+              "empty",
+              "error",
+              "focus",
+              "hover",
+              "loading"
+            ]
+          },
+          "data": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "id",
+                "type"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "command",
+                    "dialog",
+                    "navigate",
+                    "open_url",
+                    "submit",
+                    "toggle"
+                  ]
+                },
+                "label": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          },
+          "tracking": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}
