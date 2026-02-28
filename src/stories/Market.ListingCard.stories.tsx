@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ListingCard } from '../design-system/marketplace/ListingCard'
 
 const meta = {
-  title: 'Market/Listing Card',
+  title: '01-Avito/Marketplace/Listing Card',
   component: ListingCard,
   args: {
     title: 'Li Auto L9 1.5 AT, 2024',

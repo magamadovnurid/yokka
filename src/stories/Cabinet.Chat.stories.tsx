@@ -6,7 +6,7 @@ import { Input } from '../design-system/primitives/Input'
 import { Button } from '../design-system/primitives/Button'
 
 const meta = {
-  title: 'Cabinet/Chat Thread',
+  title: '01-Avito/Cabinet/Chat Thread',
   component: MessageThread,
   args: {
     messages: [

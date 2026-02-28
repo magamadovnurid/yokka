@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { SellerTrust } from '../design-system/marketplace/SellerTrust'
 
 const meta = {
-  title: 'Market/Seller & Trust',
+  title: '01-Avito/Marketplace/Seller & Trust',
   component: SellerTrust,
   args: {
     sellerName: 'Пользователь',

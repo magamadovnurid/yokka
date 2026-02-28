@@ -10,7 +10,7 @@ const states = [
 ]
 
 const meta = {
-  title: 'Cabinet/Listing States',
+  title: '01-Avito/Cabinet/Listing States',
   component: ListingStateTabs,
   args: {
     activeId: 'action',

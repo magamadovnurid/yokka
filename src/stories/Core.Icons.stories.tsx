@@ -25,7 +25,7 @@ const names: IconName[] = [
 ]
 
 const meta = {
-  title: 'Core/Icons',
+  title: '01-Avito/Foundation/Icons',
   parameters: {
     layout: 'padded',
   },

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { NotificationList, type NotificationItem } from '../design-system/cabinet/NotificationList'
 
 const meta = {
-  title: 'Cabinet/Notifications',
+  title: '01-Avito/Cabinet/Notifications',
   component: NotificationList,
   args: {
     items: [

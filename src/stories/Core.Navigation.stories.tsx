@@ -5,7 +5,7 @@ import { Pagination } from '../design-system/navigation/Pagination'
 import { Tabs } from '../design-system/navigation/Tabs'
 
 const meta = {
-  title: 'Core/Navigation',
+  title: '01-Avito/Foundation/Navigation',
   parameters: {
     layout: 'padded',
   },
