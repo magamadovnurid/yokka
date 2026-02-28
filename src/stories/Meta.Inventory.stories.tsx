@@ -3,11 +3,42 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 const inventory = [
   {
     domain: 'Core Foundation',
-    elements: ['Color tokens', 'Spacing/radius/shadows', 'Icons', 'Buttons', 'Inputs', 'Select', 'Textarea', 'Checkbox', 'Radio', 'Switch', 'Tag', 'Badge', 'Avatar', 'Card', 'Divider'],
+    elements: [
+      'Color tokens',
+      'Spacing/radius/shadows',
+      'Icons',
+      'Buttons',
+      'Inputs',
+      'Select',
+      'Textarea',
+      'Checkbox',
+      'Radio',
+      'Switch',
+      'Tag',
+      'Badge',
+      'Avatar',
+      'Card',
+      'Divider',
+    ],
   },
   {
     domain: 'Core Extensions',
-    elements: ['Indicators', 'Mini progress', 'Surface toolbar', 'Surface blocks'],
+    elements: [
+      'Indicators',
+      'Mini progress',
+      'Surface toolbar',
+      'Surface blocks',
+      'Dropdown menu',
+      'Context menu',
+      'Action menu',
+      'Popover',
+      'Tooltip',
+      'Rich tooltip',
+      'Modal',
+      'Drawer',
+      'Range slider',
+      'Price range',
+    ],
   },
   {
     domain: 'Marketplace Base',
@@ -15,7 +46,7 @@ const inventory = [
   },
   {
     domain: 'Marketplace Desktop',
-    elements: ['Desktop header', 'Category strip', 'Widget highlights', 'Compact listing rows'],
+    elements: ['Desktop header', 'Category strip', 'Widget highlights', 'Compact listing rows', 'Media gallery', 'Lightbox preview'],
   },
   {
     domain: 'Cabinet Base',
@@ -43,7 +74,7 @@ export const CoverageMatrix: Story = {
     <div className="ds-stack" style={{ minWidth: 900 }}>
       <h3 style={{ margin: 0 }}>Inventory Coverage (Avito Desktop Expanded)</h3>
       <p style={{ color: 'var(--ui-color-text-muted)', margin: 0 }}>
-        Расширенная Avito-карта компонентов: базовые элементы + desktop-микроэлементы для хедера, виджетов, статусных блоков и кабинета.
+        Расширенная Avito-карта компонентов: базовые элементы + desktop-микроэлементы + P0 категории (menus, overlays, controls, media).
       </p>
       <div className="ds-card" style={{ padding: 0 }}>
         <table style={{ borderCollapse: 'collapse', width: '100%' }}>

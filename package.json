@@ -10,7 +10,14 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "avito:auth": "node scripts/avito/save-auth-state.mjs",
+    "avito:auth:seller": "AVITO_AUTH_LABEL=seller AVITO_AUTH_STATE=.auth/avito-seller.json node scripts/avito/save-auth-state.mjs",
+    "avito:auth:buyer": "AVITO_AUTH_LABEL=buyer AVITO_AUTH_STATE=.auth/avito-buyer.json node scripts/avito/save-auth-state.mjs",
+    "avito:audit": "node scripts/avito/run-audit.mjs",
+    "avito:audit:seller": "AVITO_ROLE=seller AVITO_AUTH_STATE=.auth/avito-seller.json AVITO_OUTPUT_DIR=reports/avito-audit/seller node scripts/avito/run-audit.mjs",
+    "avito:audit:buyer": "AVITO_ROLE=buyer AVITO_AUTH_STATE=.auth/avito-buyer.json AVITO_OUTPUT_DIR=reports/avito-audit/buyer node scripts/avito/run-audit.mjs",
+    "avito:audit:roles": "node scripts/avito/run-role-audits.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

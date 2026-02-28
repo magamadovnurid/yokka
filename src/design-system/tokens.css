@@ -127,6 +127,9 @@
 
   --ui-color-bg-glow-start: color-mix(in srgb, var(--ui-color-primary) 12%, var(--ui-color-canvas));
   --ui-color-bg-glow-end: color-mix(in srgb, var(--ui-color-warning) 10%, var(--ui-color-canvas));
+  --ui-color-backdrop: color-mix(in srgb, var(--ui-color-text) 58%, transparent);
+  --ui-color-elevated: var(--ui-color-surface);
+  --ui-color-elevated-border: color-mix(in srgb, var(--ui-color-border-strong) 65%, var(--ui-color-border));
 
   --ui-radius-2xs: 4px;
   --ui-radius-xs: 6px;
@@ -144,6 +147,7 @@
 
   --ui-shadow-sm: 0 1px 3px rgb(8 19 16 / 0.08);
   --ui-shadow-md: 0 8px 20px rgb(11 24 20 / 0.08);
+  --ui-shadow-lg: 0 20px 36px rgb(10 22 18 / 0.2);
 
   --ui-motion-duration-fast: 120ms;
   --ui-motion-duration-base: 180ms;
