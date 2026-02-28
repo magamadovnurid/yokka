@@ -8,7 +8,7 @@ import { Switch } from '../design-system/primitives/Switch'
 import { Textarea } from '../design-system/primitives/Textarea'
 
 const meta = {
-  title: '01-Avito/Foundation/Forms',
+  title: 'Core/Forms',
   parameters: {
     layout: 'padded',
   },

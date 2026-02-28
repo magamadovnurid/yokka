@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { SearchPanel } from '../design-system/marketplace/SearchPanel'
 
 const meta = {
-  title: '01-Avito/Marketplace/Search & Filters',
+  title: 'Market/Search & Filters',
   component: SearchPanel,
   args: {
     title: 'Найдите товар или услугу',

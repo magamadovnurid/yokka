@@ -19,7 +19,7 @@ const spacing = ['--ui-space-1', '--ui-space-2', '--ui-space-3', '--ui-space-4',
 const radii = ['--ui-radius-2xs', '--ui-radius-xs', '--ui-radius-sm', '--ui-radius-md', '--ui-radius-lg']
 
 const meta = {
-  title: '01-Avito/Foundation/Tokens',
+  title: 'Core/Tokens',
   parameters: {
     layout: 'padded',
   },

@@ -5,7 +5,7 @@ import { FilterBar } from '../design-system/marketplace/FilterBar'
 const defaultChips = ['Цена до 5 млн', 'Только с фото', 'Проверенный продавец']
 
 const meta = {
-  title: '01-Avito/Marketplace/Filter Bar',
+  title: 'Market/Filter Bar',
   component: FilterBar,
   args: {
     query: 'Li Auto',

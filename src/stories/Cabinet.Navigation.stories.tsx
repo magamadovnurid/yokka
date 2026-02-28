@@ -13,7 +13,7 @@ const items = [
 ]
 
 const meta = {
-  title: '01-Avito/Cabinet/Navigation',
+  title: 'Cabinet/Navigation',
   component: SidebarNav,
   args: {
     title: 'Личный кабинет',

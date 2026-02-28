@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { InboxList } from '../design-system/cabinet/InboxList'
 
 const meta = {
-  title: '01-Avito/Cabinet/Inbox',
+  title: 'Cabinet/Inbox',
   component: InboxList,
   args: {
     activeId: '1',

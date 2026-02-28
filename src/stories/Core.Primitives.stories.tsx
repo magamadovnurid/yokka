@@ -10,7 +10,7 @@ import { Input } from '../design-system/primitives/Input'
 import { Tag } from '../design-system/primitives/Tag'
 
 const meta = {
-  title: '01-Avito/Foundation/Primitives',
+  title: 'Core/Primitives',
   parameters: {
     layout: 'padded',
   },

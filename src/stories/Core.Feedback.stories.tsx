@@ -7,7 +7,7 @@ import { Toast } from '../design-system/feedback/Toast'
 import { Button } from '../design-system/primitives/Button'
 
 const meta = {
-  title: '01-Avito/Foundation/Feedback',
+  title: 'Core/Feedback',
   parameters: {
     layout: 'padded',
   },
