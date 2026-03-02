@@ -1,82 +1,28 @@
 .app-shell {
   display: grid;
-  gap: 20px;
+  gap: 14px;
   margin: 0 auto;
-  max-width: 1240px;
-  padding: 24px 16px 56px;
+  max-width: 1220px;
+  padding: 18px 16px 48px;
 }
 
 .app-header {
   background: var(--ui-color-surface);
   border: 1px solid var(--ui-color-border);
-  border-radius: var(--ui-radius-lg);
+  border-radius: var(--ui-radius-md);
   display: grid;
-  gap: 10px;
-  padding: 20px;
+  gap: 8px;
+  padding: 14px;
 }
 
 .app-header h1 {
-  font-size: clamp(28px, 4vw, 40px);
-  line-height: 1.03;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.1;
   margin: 0;
 }
 
 .app-header p {
   color: var(--ui-color-text-muted);
+  font-size: 14px;
   margin: 0;
-}
-
-.app-header code {
-  background: #e8f0ed;
-  border-radius: var(--ui-radius-xs);
-  color: #255b4f;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 2px 8px;
-}
-
-.app-grid {
-  align-items: start;
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.app-grid > *:nth-child(1) {
-  grid-column: span 6;
-}
-
-.app-grid > *:nth-child(2) {
-  grid-column: span 6;
-}
-
-.app-grid > *:nth-child(3),
-.app-grid > *:nth-child(4),
-.app-grid > *:nth-child(5) {
-  grid-column: span 4;
-}
-
-.app-grid > *:nth-child(6) {
-  grid-column: span 8;
-}
-
-.app-grid > *:nth-child(7),
-.app-grid > *:nth-child(8) {
-  grid-column: span 6;
-}
-
-@media (max-width: 1080px) {
-  .app-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .app-grid > * {
-    grid-column: span 1 !important;
-  }
-}
-
-@media (max-width: 760px) {
-  .app-grid {
-    grid-template-columns: 1fr;
-  }
 }

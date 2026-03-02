@@ -42,6 +42,8 @@ const preview: Preview = {
     options: {
       storySort: {
         order: [
+          'Screens',
+          ['Market Search Results'],
           'Core',
           ['Tokens', 'Primitives', 'Forms', 'Controls', 'Menus', 'Overlays', 'Icons', 'Indicators', 'Surface Patterns', 'Navigation', 'Feedback'],
           'Market',

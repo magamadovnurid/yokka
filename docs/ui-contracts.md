@@ -81,3 +81,9 @@ npm run contracts:validate-payload -- contracts/examples/market.search.results.j
 
 - [`contracts/examples/market.search.results.json`](/Users/mns/Desktop/yokka/contracts/examples/market.search.results.json)
 - [`contracts/examples/cabinet.dashboard.home.json`](/Users/mns/Desktop/yokka/contracts/examples/cabinet.dashboard.home.json)
+- [`contracts/examples/market.search.results.screen.json`](/Users/mns/Desktop/yokka/contracts/examples/market.search.results.screen.json)
+
+## 9. Первый экранный шаблон
+
+- Спецификация: [`docs/screens/market.search.results.md`](/Users/mns/Desktop/yokka/docs/screens/market.search.results.md)
+- Storybook screen-level история: [`src/stories/Screens.MarketSearchResults.stories.tsx`](/Users/mns/Desktop/yokka/src/stories/Screens.MarketSearchResults.stories.tsx)
