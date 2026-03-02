@@ -2,6 +2,7 @@ import { Avatar } from '../primitives/Avatar'
 import { Badge } from '../primitives/Badge'
 import { Icon, type IconName } from '../primitives/Icon'
 import { Input } from '../primitives/Input'
+import { LogoMark } from '../primitives/LogoMark'
 
 interface DesktopHeaderAction {
   id: string
@@ -24,7 +25,10 @@ export function DesktopHeader({ actions, city, onAction, onCityClick, onQueryCha
   return (
     <header className="ds-market-header" aria-label="Desktop header">
       <div className="ds-market-header__left">
-        <strong className="ds-market-header__brand">Yokka</strong>
+        <strong aria-label="Yokka" className="ds-market-header__brand">
+          <LogoMark className="ds-market-header__brand-mark" size={22} />
+          <span className="ds-market-header__brand-tail">okka</span>
+        </strong>
         <button className="ds-market-header__city" onClick={onCityClick} type="button">
           <Icon name="location" size={14} />
           <span>{city}</span>

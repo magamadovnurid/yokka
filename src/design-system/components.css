@@ -1277,10 +1277,24 @@
 }
 
 .ds-market-header__brand {
+  align-items: center;
   color: var(--ui-color-text);
+  display: inline-flex;
   font-size: 18px;
   font-weight: 800;
+  gap: 2px;
   letter-spacing: 0.01em;
+  line-height: 1;
+}
+
+.ds-market-header__brand-mark {
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ui-color-primary) 14%, transparent);
+  flex: 0 0 auto;
+}
+
+.ds-market-header__brand-tail {
+  transform: translateY(1px);
 }
 
 .ds-market-header__city {
