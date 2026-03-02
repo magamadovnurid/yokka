@@ -4,6 +4,8 @@ Source files:
 - `yokkalogo.png` (master)
 - `yokkalogo.jpg`
 - `yokkalogo.webp`
+- `logo-wordmark-yokka-blue.svg` / `.png`
+- `logo-wordmark-ekka-blue.svg` / `.png`
 
 Generate all favicon/logo assets:
 
@@ -20,3 +22,4 @@ Generated set:
 - Microsoft tiles: `mstile-*.png`, `browserconfig.xml`
 - SEO social: `og-image-1200x630.png`, `twitter-image-1200x600.png`
 - Integration files: `site.webmanifest`, `head-seo-snippet.html`
+- Wordmarks: `logo-wordmark-yokka-blue.*`, `logo-wordmark-ekka-blue.*`
