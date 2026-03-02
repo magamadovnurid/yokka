@@ -1280,21 +1280,21 @@
   align-items: center;
   color: var(--ui-color-text);
   display: inline-flex;
-  font-size: 18px;
-  font-weight: 800;
-  gap: 2px;
-  letter-spacing: 0.01em;
+  font-size: 34px;
+  font-weight: 900;
+  gap: 6px;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
 
 .ds-market-header__brand-mark {
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--ui-color-primary) 14%, transparent);
   flex: 0 0 auto;
 }
 
 .ds-market-header__brand-tail {
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 .ds-market-header__city {
@@ -2338,6 +2338,16 @@
 
   .ds-market-header__right {
     flex-wrap: wrap;
+  }
+
+  .ds-market-header__brand {
+    font-size: 28px;
+    gap: 5px;
+  }
+
+  .ds-market-header__brand-mark {
+    height: 44px;
+    width: 44px;
   }
 
   .ds-market-widget-board__highlights,

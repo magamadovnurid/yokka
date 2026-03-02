@@ -26,7 +26,7 @@ export function DesktopHeader({ actions, city, onAction, onCityClick, onQueryCha
     <header className="ds-market-header" aria-label="Desktop header">
       <div className="ds-market-header__left">
         <strong aria-label="Yokka" className="ds-market-header__brand">
-          <LogoMark className="ds-market-header__brand-mark" size={22} />
+          <LogoMark className="ds-market-header__brand-mark" size={52} />
           <span className="ds-market-header__brand-tail">okka</span>
         </strong>
         <button className="ds-market-header__city" onClick={onCityClick} type="button">
