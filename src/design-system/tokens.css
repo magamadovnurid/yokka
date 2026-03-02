@@ -178,6 +178,28 @@
   --ui-color-info: #1b5d95;
 }
 
+:root[data-theme='yokka'] {
+  --ui-color-canvas: #f2f6fb;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #f5f8fc;
+  --ui-color-surface-strong: #eaf0f8;
+  --ui-color-border: #cfdaea;
+  --ui-color-border-strong: #9db3cf;
+
+  --ui-color-text: #102033;
+  --ui-color-text-muted: #4a617e;
+  --ui-color-text-subtle: #667d9a;
+
+  --ui-color-primary: #0a5ba2;
+  --ui-color-primary-hover: #084b87;
+  --ui-color-on-primary: #f5f9ff;
+
+  --ui-color-danger: #c13f4b;
+  --ui-color-warning: #8f6918;
+  --ui-color-success: #2f7857;
+  --ui-color-info: #205f9e;
+}
+
 :root[data-theme='ocean'] {
   --ui-color-canvas: #f3f6fa;
   --ui-color-surface: #ffffff;

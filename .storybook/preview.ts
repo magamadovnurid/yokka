@@ -7,7 +7,7 @@ function applyPalette(palette: string | undefined) {
   const maybeDocument = globalThis as {
     document?: { documentElement?: { setAttribute: (name: string, value: string) => void } }
   }
-  maybeDocument.document?.documentElement?.setAttribute(paletteAttribute, palette ?? 'avito')
+  maybeDocument.document?.documentElement?.setAttribute(paletteAttribute, palette ?? 'yokka')
 }
 
 const preview: Preview = {
@@ -15,11 +15,12 @@ const preview: Preview = {
     palette: {
       name: 'Palette',
       description: 'Переключение цветовой гаммы UI',
-      defaultValue: 'avito',
+      defaultValue: 'yokka',
       toolbar: {
         icon: 'paintbrush',
         dynamicTitle: true,
         items: [
+          { value: 'yokka', title: 'Yokka Blue' },
           { value: 'avito', title: 'Avito Green' },
           { value: 'ocean', title: 'Ocean Blue' },
           { value: 'graphite', title: 'Graphite Mono' },
